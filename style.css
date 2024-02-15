@@ -1,0 +1,704 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+html{
+    width:100%;
+    padding:0px;
+    margin:0px;
+    overflow-x: hidden;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width:100%;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    overflow-x:hidden;
+}
+nav{
+    background-color:#E6B9DE ;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+    margin:0px 16px;
+}
+nav a{
+    text-decoration: none;
+}
+nav .logo{
+    font-size: 60px;
+    font-weight: bolder;
+}
+#symbol{
+    font-size: 40px;
+    padding-left:10px;
+    color:#211C6A;
+}
+nav ul{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #211C6A;
+}
+nav ul a:hover{
+    color: white;
+    
+}
+nav li:hover{
+    transform: scale(1.2);
+}
+
+.list .dropdown{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background-color:#211C6A;
+}
+.dropdown a{
+    text-decoration: none;
+    display: block;
+    width:150px;
+    background-color:#211C6A;
+    color:white;
+    padding:20px;
+    font-size:16px;
+    text-align: center;
+}
+.dropdown a:hover{
+    background-color:#B4B4B8;
+    color:white;
+}
+.holiday{
+    list-style: none;
+    display:none;
+    position:absolute;
+}
+
+
+.dropdown li:nth-child(1):hover .holiday{
+    display:block;
+}
+.destination{
+    list-style: none;
+    display: none;
+    position: absolute;
+}
+.dropdown li:nth-child(2):hover .destination{
+    display:block;
+}
+.travelsc{
+    list-style: none;
+    display: none;
+    position: absolute;
+}
+.dropdown li:nth-child(3):hover .travelsc{
+    display: block;
+}
+.searchbar{
+    background: url("bgimg.webp") center/cover no-repeat ;
+    height:80vh;
+}
+.namedis{
+    padding:20px;
+    font-size:40px;
+    color:#211C6A
+}
+.loginform{
+    width:600px;
+    background-color:blueviolet;
+    color:white;
+    position: absolute;
+    top:30%;
+    left:30%;
+    z-index-2;
+    padding:50px;
+    text-align: center;
+    border-radius: 12px;
+    display: none;
+    opacity: 0.8;
+}
+.loginform input{
+    width:60%;
+    margin-bottom:20px;
+    font-size:16px;
+    padding:6px;
+    border-radius: 8px;
+    border:none;
+}
+.loginform h1{
+    margin-bottom:20px;
+}
+.loginform button{
+    width:100px;
+    padding:6px;
+    font-size:16px;
+    margin-top:10px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color:black;
+    margin-left:20px;
+}
+
+.loginform button:hover{
+    cursor: pointer;
+    background-color: cyan;
+    transform: scale(1.2);
+}
+.displayname{
+    background-color:aliceblue;
+    color:black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.displayname h3{
+    color:black;
+}
+.searchbar h1{
+    text-align: center;
+    color:white;
+    font-weight: bolder;
+    padding:140px 0px 60px;
+    font-size: 50px;
+}
+.searchcontainer{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+.category h3{
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: white;
+}
+.destinations h3{
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: white;
+}
+.searchbutton button{
+    width:200px;
+    height:50px;
+    margin-top:60px;
+    margin-left:40px;
+    background-color:#211C6A ;
+    color: white;
+}
+#selectbox{
+    border: none;   
+    width:350px;
+    height:50px;
+    padding-left:10px;
+}
+.category{
+    padding:20px 40px;
+}
+.searchbutton button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #211C6A;
+}
+.contentcontainer h1,h2{
+    margin-top:30px;
+    text-align: center;
+    color:#211C6A;
+    font-size:2em;
+    font-weight: lighter;
+}
+.contentcontainer h1{
+    font-size: 3em;
+}
+.contentcontainer h3{
+    margin:30px 0px 40px 30px;
+    font-weight: lighter; 
+    color: #211C6A;
+}
+.contentcontainer{
+    margin-bottom:40px;
+}
+.containerbox{
+    display: flex;
+    overflow-x: auto;
+    width:1000px;
+    margin:0px 200px;
+}
+.containerbox::-webkit-scrollbar{
+    display: none;
+}
+.indtour{
+    position:relative ;
+}
+#leftbtn1{
+    position:absolute;
+    top:50%;
+    left:150px;
+    font-size: 20px;
+    
+}
+#rightbtn1{
+    position:absolute;
+    top:50%;
+    right:120px;
+    font-size: 20px;
+}
+.box1 a,p{
+    margin:10px;
+    color: #211C6A;
+}
+.box1 a{
+    text-decoration: none;
+}
+.box1{
+    width:350px;
+    background-color: aliceblue;
+    margin:10px 10px;
+    border-radius: 10px;
+}
+.box2{
+    width:350px;
+    background-color: aliceblue;
+    margin:10px 10px;
+    border-radius:10px;
+    
+}
+.containerbox2{
+    width:1000px;
+    display: flex;
+    overflow-x: auto;
+    margin:0px 200px;
+
+}
+.containerbox2::-webkit-scrollbar{
+    display: none;
+}
+#leftbtn{
+    position:absolute;
+    top:50%;
+    left:150px;
+    font-size: 20px;
+    
+}
+#rightbtn{
+    position:absolute;
+    top:50%;
+    right:120px;
+    font-size: 20px;
+}
+.inttour{
+    position: relative;
+}
+.box1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 0.6;
+}
+.box2:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity:0.6;
+}
+.box2 a {
+    text-decoration: none;
+    margin:10px;
+}
+.ratingcontainer{
+    background-color:aliceblue;
+}
+.ratingcontainer h1{
+    text-align: center;
+    color: #211C6A;
+    font-size: 50px;
+    font-weight: lighter;
+    padding-top:30px;
+}
+.ratingbutton {
+    display: flex;
+    justify-content:center;
+    padding:20px;
+}
+.ratingbutton h3,p{
+    margin:0px;
+    margin:0px 70px 10px;
+    color:#211C6A;
+}
+.ratingbutton button{
+    width:150px;
+    font-size: 16px;
+    padding:4px;
+    background-color: cornflowerblue;
+    color:white;
+    border: none;
+    border-radius: 4px;
+}
+#rbtn:hover{
+    cursor: pointer;
+    background-color: black;
+    transform: scale(1.1);
+}
+.ratingbox h3,p{
+    margin:0px;
+    color: white;
+}
+.ratingbox{
+    width:300px;
+    background-color:white;
+    color:black;
+    padding:10px;
+    border-radius: 8px;
+    margin: 10px 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+.ratingbox i{
+    font-size: 16px;
+    margin:5px 8px 5px 5px;
+}
+.ratingbox p{
+    color: black;
+    padding-left:30px;
+}
+.ratingbox h3{
+    color: black;
+}
+.ratingbox button{
+    width:70px;
+    margin:10px 0px 10px 30px;
+    background-color: #B4B4B8;
+    padding:4px;
+    border: none;
+    border-radius: 4px;
+}
+.ratingbox:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#rateclose:hover{
+    cursor: pointer;
+    background-color: black;
+    color:white;
+    transform: scale(1.1);
+}
+.ratingpopup{
+    width:50%;
+    background-color: cornflowerblue;
+    padding:10px 30px ;
+    border-radius: 8px;
+    position:absolute;
+    top:280%;
+    left:28%;
+    z-index: 2;
+    display: none;
+}
+.ratingpopup input{
+    width:100%;
+    background: transparent;
+    font-size:20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    padding:5px;
+}
+.ratingpopup textarea{
+    width:100%;
+    background: transparent;
+    font-size:20px;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    padding:5px;
+}
+.ratingpopup h2{
+    color:white;
+    margin-bottom:20px;
+}
+.ratingpopup button{
+    width:100px;
+    padding:5px;
+    margin:20px 0px 20px 120px;
+    background-color: white;
+    border:none;
+    color:black;
+    border-radius: 4px;
+    font-size: 18px;
+}
+.ratingpopup input::placeholder{
+    color: black;
+}
+.ratingpopup textarea::placeholder{
+    color:black;
+}
+.contentcontainer p{
+    color: black;;
+}
+.box1 p{
+    margin: 10px 10px;
+}
+.box2 p{
+    margin: 10px 10px;
+}
+.ratingcontainer{
+    padding-bottom: 10px;
+}
+#ratepopclose:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+#ratepopadd:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.promocontainer{
+    background-color: #211C6A;
+}
+.promocontainer li{
+    color: white;
+    list-style: none;
+}
+.promocontainer ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:30px;
+
+}
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding:30px;
+}
+.footer li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.footer a{
+    text-decoration: none;
+    color:white;
+}
+.footer h3{
+    color:white;
+    margin-bottom: 20px;
+}
+.aboutus, .services, .packages{
+    flex:1;
+}
+.contact{
+    display: flex;
+    flex:2;
+    justify-content: space-between;
+}
+
+
+.contact h4,h3{
+    color:white;
+    
+}
+.contact h4{
+    margin-bottom: 20px;
+}
+.follow li{
+    margin-bottom:20px;
+}
+.follow li:hover{
+    transform: scale(1.2);
+}
+.menuline{
+    height:3px;
+    width:20px;
+    background-color: darkslateblue;
+    margin-bottom: 3px;
+    display: ;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+
+@media all and (max-width:1219px){
+    nav{
+        flex-direction: column;
+    }
+    nav ul a{
+        font-size: 20px;
+    }
+    nav ul{
+       margin:10px 0px;
+       display: none;
+    }
+    nav .logo a{
+        font-size:40px;
+        padding-top:10px;
+        align-self: flex-start;
+    }
+    #symbol{
+        font-size: 24px;
+    }
+    nav li{
+        display: block;
+        padding:8px;
+        text-align: center;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        top:50px;
+        right:20px;
+        
+    }
+    .showmenu{
+        display: block;
+    }
+
+    .list .dropdown{
+        flex-wrap: wrap;
+    }
+}
+@media all and (max-width:880px){
+    .loginform{
+        width:250px;
+        left:15%;
+        padding: 30px;
+    }
+    .loginform h1{
+        font-size:20px;
+    }
+    .loginform input{
+        width:100%;
+    }
+}
+
+@media all and (max-width:1250px){
+    .searchbar{
+        height:100vh;
+    }
+    .searchcontainer{
+        flex-wrap: wrap;
+    }
+}
+@media all and (max-width:630px){
+    .searchbar{
+        height:120vh;
+    }
+}
+@media all and (max-width:1326px){
+    #leftbtn1{
+        left:80px;
+    }
+    
+    .containerbox{
+        width:500px;
+        margin:0px 100px;
+    }
+}
+@media all and (max-width:800px){
+    .containerbox{
+        width:320px;
+        margin:0px 50px;
+    }
+    #leftbtn1{
+        top:10px;
+        left:20px;
+    }
+    #rightbtn1{
+        top:10px;
+        left:40px;
+    }
+    .containerbox img{
+        width:300px;
+        height:150px;
+    }
+}
+
+@media all and (max-width:1326px){
+    #leftbtn{
+        left:80px;
+    }
+    .containerbox2{
+        width:500px;
+        margin:0px 100px;
+    }
+}
+
+@media all and (max-width:800px){
+    .containerbox2{
+        width:320px;
+        margin:0px 50px;
+    }
+    #leftbtn{
+        top:10px;
+        left:20px;
+    }
+    #rightbtn{
+        top:10px;
+        left:40px;
+    }
+    .containerbox2 img{
+        width:300px;
+        height:150px;
+    }
+}
+
+@media all and (max-width:800px){
+    .ratingcontainer h1{
+        font-size:25px;
+    }
+    .ratinghead h3,p{
+        font-size: 10px;
+    }
+    .ratingbox{
+        width:200px
+    }
+    .ratingpopup{
+        width:60%;
+        left:15%;
+        top:280%;
+    }
+    .ratingpopup h2{
+        font-size: 30px;
+    }
+    .ratingpopup input{
+        font-size: 16px;
+    }
+    .ratingpopup button{
+        width:80px;
+        font-size: 16px;
+        margin-left:0px;
+        margin-right: 20px;
+    }
+    .promocontainer ul{
+        flex-wrap: wrap;
+        padding:20px;
+    }
+    .promocontainer li {
+        margin-bottom:16px;
+    }
+    
+}
+
+@media all and (max-width:1229px){
+    .footer{
+        flex-wrap: wrap;
+    }
+    .footer h3,h4,a{
+        font-size:10px;
+    }
+    .aboutus, .services, .contact, .packages, .email, .follow{
+        margin: 10px 20px;
+    }
+}
+
+
+
+
